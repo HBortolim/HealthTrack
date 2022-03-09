@@ -41,10 +41,6 @@ h1 + p{
     color: antiquewhite;
 }
 
-form{
-    display: none;
-}
-
 .form-section{
     padding: 25px 30px;
     display: flex;
