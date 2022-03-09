@@ -1,0 +1,154 @@
+/* #4DBDE0 - azul principal
+    #009A0F --verde
+    #FE0505 -- vermelho
+*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    background-color: #4DBDE0;
+    background-image: linear-gradient(160deg, #4DBDE0 0%, #80D0C7 100%);
+}
+
+.container{
+    background-color: rgba(255, 255, 255, 0.925);
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 320px;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.form-title{
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+.form-desc{
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 400;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+}
+
+.personal-section{
+    width: 270px;
+}
+
+.genero-container{
+    margin: 10px 0 20px;
+}
+
+.genero-container h2{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.genero-radios {
+    justify-content: center;
+    align-content: center;
+    width: fit-content;
+}
+
+.genero-opcao {
+    flex-direction: row;
+    align-items: center;
+    margin: 5px 0 5px 0;
+    gap: 4px;
+}
+
+.input-name{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="date"] {
+    margin: 3px 0 15px 0;
+    height: 30px;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #858585;
+    width: 100%;
+}
+
+select{
+    height: 30px;
+    border-radius: 5px;
+    margin: 3px 0 15px 0;
+}
+
+button{
+    background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%);
+    padding: 10px 10px;
+    text-align: center;
+    text-transform: uppercase;   
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 8px;
+    display: block;
+    border: 1px solid transparent;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+@media screen and (min-width: 700px) {
+    .container{
+        width: 400px;        
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .container{
+        width: 70%;
+    }
+
+    .personal-section, .address-section{
+        width: 500px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        align-items: center;        
+    }
+
+    .genero-container{
+       grid-row: 4/5;
+       grid-column: 1/3;
+    }
+
+    .genero-radios{
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 15px;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .button-div{
+        margin-top: 15px;
+    }
+    
+}

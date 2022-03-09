@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Track</title>
+    <link rel="stylesheet" href="css/personal-form-style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="form-title">Dados Pessoais</h1>
+        <p class="form-desc">Preencha seus dados pessoais para obter o melhor do Health Track!</p>
+        <form action="personal-form.html">
+            <div class="personal-section">
+                <div class="input-group">
+                    <label for="firstName" class="input-name">Nome</label>
+                    <input type="text" name="firstName" id="firstName">
+                </div>
+                <div class="input-group">
+                    <label for="lastName" class="input-name">Sobrenome</label>
+                    <input type="text" name="lastName" id="lastName">
+                </div>
+                <div class="input-group">
+                    <label for="birth" class="input-name">Data de Nascimento</label>
+                    <input type="date" name="birth" id="birth">
+                </div>
+                <div class="input-group">
+                    <label for="phone" class="input-name">Celular</label>
+                    <input type="tel" name="phone" id="phone" placeholder="DDD XXXXX-XXXX">
+                </div>
+                <div class="input-group">
+                    <label for="cpf" class="input-name">CPF</label>
+                    <input type="number" id="cpf" name="cpf" placeholder="Somente Números">
+                </div>
+                <div class="genero-container">
+                    <h2>Gênero</h2>
+                    <div class="genero-radios">
+                        <div class="genero-opcao">
+                            <input type="radio" name="gender" id="male" value="M">
+                            <label for="male">Masculino</label>
+                        </div>
+                        <div class="genero-opcao">
+                            <input type="radio" name="gender" id="female" value="F">
+                            <label for="female">Feminino</label>
+                        </div>
+                        <div class="genero-opcao">
+                            <input type="radio" name="gender" id="other" value="O">
+                            <label for="other">Prefiro Não Dizer/Outro</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="address-section">
+                <div class="input-group">
+                    <label for="state" class="input-name">Estado</label>
+                    <select name="state" id="state">
+                        <option value="select" selected hidden>Selecione</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="city" class="input-name">Cidade</label>
+                    <input type="text" name="city" id="city">
+                </div>
+                <div class="input-group">
+                    <label for="address" class="input-name">Endereço</label>
+                    <input type="text" name="address" id="address" placeholder="Ex: Avenida Health Track, 1200">
+                </div>
+                <div class="input-group">
+                    <label for="cep" class="input-name">CEP</label>
+                    <input type="number" name="cep" id="cep" placeholder="Somente Números">
+                </div>
+            </div>
+            <div class="button-div">
+                <button type="submit" href="index.html">Concluído</button>
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>

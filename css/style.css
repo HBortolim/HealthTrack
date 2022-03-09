@@ -1,0 +1,241 @@
+/* #4DBDE0 - azul principal
+    #009A0F --verde
+    #FE0505 -- vermelho
+*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited, a:link {
+    color: antiquewhite;
+}
+
+ul {
+    list-style: none;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .7rem .4rem;
+    background-color: #4DBDE0;
+    height: 10vh;
+    width: 100%;
+}
+
+.header-top h1 {
+    font-size: 1rem;
+}
+
+.header-nav ul {
+    display: flex;
+}
+
+.header-nav ul li {
+    margin: 0 .5rem;
+}
+
+.header-nav ul li a{
+    font-size: 0.8rem;
+    text-shadow: 0.5px 0.5px rgba(104, 104, 104, 0.288);
+}
+
+.bi-list{
+    font-size: 2rem;
+    color: aliceblue;
+    display: block;
+    
+}
+
+.header-nav .menu-items {
+    display: none;
+}
+
+.container{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 90vh;
+}
+
+.title{
+    margin-bottom: 0.3rem;
+    align-self: flex-start;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.dashboard-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    width: 90%;
+}
+
+.dashboard-body{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    align-items: center;
+    justify-items: left;
+    column-gap: 2.5rem;
+    row-gap: .3rem;
+    padding: .8rem;
+    margin: 0 1rem;
+    background-color: rgba(77, 189, 224, 0.33);
+    border-radius: 5px;
+    width: 100%;
+}
+
+.dashboard-info{
+    font-weight: 600;
+}
+
+.info-date{
+    font-weight: 500;
+}
+
+.info-variation{
+    position: relative;
+    bottom: 8px;
+    right: 5px;
+    color: #FE0505;
+    font-weight: 400;
+}
+
+.info-state{
+    color: #009A0F;
+    font-weight: 400;
+}
+
+.steps-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;   
+}
+
+.steps-progress-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(166,166,166);
+    background: linear-gradient(273deg, rgba(166,166,166,0.8603816526610644) 20%, rgba(77,189,224,1) 100%);
+    width: 100%;
+    height: 3rem;
+    border-radius: 5px;
+}
+
+.exercise-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+.exercise-list{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: .5rem;
+    border: 1px solid rgb(184, 184, 184);
+    border-radius: 5px;
+}
+
+.ex-list{
+    display: inline-block;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.add-item{
+    display: inline-block;
+    position: relative;
+    left: 7rem;
+    bottom: .8rem;
+    text-decoration: underline;
+    font-weight: 600;
+    letter-spacing: .4px;
+    color: black;
+}
+
+@media screen and (min-width: 700px){
+    .add-item{
+        left: 17.5rem;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .bi-list {
+        display: none;
+    }
+
+    .header-top h1 {
+        font-size: 1.5rem;
+    }
+    .header-nav .menu-items {
+        display: flex;
+      }
+
+    .header-nav .menu-items a{
+        font-size: 1rem;
+    }
+
+    .header-nav .menu-items a:hover{
+        color: rgb(224, 224, 224);
+    }
+
+    .container{
+        margin-top: 1rem;
+    }
+
+    .dashboard-section, .steps-section, .exercise-section{
+        width: 60%;
+    }
+
+    .title{
+        font-size: 1.5rem;
+    }
+
+    .dashboard-body{
+        justify-items: stretch;
+        grid-template-columns: 7fr 1fr;
+        
+    }
+
+    .dashboard-info, .info-date{
+        font-size: 1.1rem;
+    }
+
+    .ex-list{
+        font-size: 2rem;
+    }
+
+    .add-item{
+        left: 34rem;
+    }
+
+    .add-item:hover{
+        color: #10acdb;
+    }
+}

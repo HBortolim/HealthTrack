@@ -1,0 +1,180 @@
+/* #4DBDE0 - azul principal
+    #009A0F --verde
+    #FE0505 -- vermelho
+*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited, a:link {
+    color: antiquewhite;
+}
+
+ul {
+    list-style: none;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+}
+
+/* Profile Page */
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .7rem .4rem;
+    background-color: #4DBDE0;
+    height: 10vh;
+    width: 100%;
+}
+
+.header-top h1 {
+    font-size: 1rem;
+}
+
+.header-nav ul {
+    display: flex;
+}
+
+.header-nav ul li {
+    margin: 0 .5rem;
+}
+
+.header-nav ul li a{
+    font-size: 0.8rem;
+    text-shadow: 0.5px 0.5px rgba(104, 104, 104, 0.288);
+}
+
+.bi-list{
+    font-size: 2rem;
+    color: aliceblue;
+    display: block;
+    
+}
+
+.header-nav .menu-items {
+    display: none;
+  }
+
+.container {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80vh;
+}
+
+.profile-pic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bi-person-circle {
+    fill: #4DBDE0;
+}
+
+.profile-pic-content .bi-pen-fill {
+    position: relative;
+    right: 1.5rem;
+    color: #4DBDE0;
+}
+
+.profile-name {
+    font-size: 1.3rem;
+}
+
+.profile-table{
+    background-color: rgba(255, 255, 255, 0.836);
+    border-radius: 15px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.288);
+    width: fit-content;
+    padding: 25px 15px;
+    display: grid;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+form .bi-pen-fill{
+    position: relative;
+    left: 18rem;
+    bottom: 1.3rem;
+    color: #4DBDE0;
+}
+
+/* Profile Page End */
+
+@media screen and (min-width: 950px){
+    .bi-list {
+        display: none;
+    }
+
+    .header-top h1 {
+        font-size: 1.5rem;
+    }
+    .header-nav .menu-items {
+        display: flex;
+      }
+
+    .header-nav .menu-items a{
+        font-size: 1rem;
+    }
+
+    .bi-person-circle{
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .profile-pic-content .bi-pen-fill{
+        right: 2.3rem;
+    }
+
+    .profile-name {
+        font-size: 1.7rem;
+    }
+
+    .table-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        align-self: flex-start;
+    }
+
+    .profile-table-container{
+        width:400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form{
+        width: 100%;
+    }
+
+    .profile-table {
+        width: 100%;
+    }
+
+    form .bi-pen-fill{
+        left: 23.5rem;
+    }
+}

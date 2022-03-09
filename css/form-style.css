@@ -1,0 +1,146 @@
+/* #4DBDE0 - azul principal
+    #009A0F --verde
+    #FE0505 -- vermelho
+*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    max-height: 100vh;    
+}
+
+.container{
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 10fr 1fr 0.5fr;
+    align-items: center;
+    justify-items: center;
+    row-gap: 35px;
+    height: 100vh;
+}
+
+.main-title{
+    text-align: center;
+    margin-bottom: 14px;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    color: antiquewhite;
+}
+
+h1 + p{
+    font-weight: 500;
+    color: antiquewhite;
+}
+
+form{
+    display: none;
+}
+
+.form-section{
+    padding: 25px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    background-color: rgba(255, 255, 255, 0.836);
+    border-radius: 15px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.288);
+    width: fit-content;
+}
+
+label{
+    display: inline-block;
+    width: 100%;
+    font-weight: 450;
+    margin-bottom: 5px;
+}
+
+input{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #858585;
+}
+
+input:focus{
+    border-color: #4DBDE0;
+}
+
+
+
+.btn-grad {background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%)}
+.btn-grad {
+   
+   padding: 5px 45px;
+   text-align: center;
+   text-transform: uppercase;   
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+   border: 1px solid transparent;
+   font-weight: 500;
+   letter-spacing: 0.5px;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+footer{
+    text-align: center;
+    font-size: 12px;
+    background-color: whitesmoke;
+    width: 100%;
+    padding: 5px;
+    grid-row: end;
+} 
+
+a:visited, a:active{
+    color: rgb(0, 42, 156);
+}
+
+@media screen and (min-width: 900px) {
+
+    .container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+    }
+
+    .main-title{
+        font-size: 45px;
+    }
+
+    .main-title + p{
+        font-size: 20px;
+    }
+
+    label{
+        font-size: 18px;
+    }
+
+    input{
+        height: 40px;
+        font-size: 15px;
+    }
+
+    footer{
+        grid-column: 1/-1;
+    }
+    
+}
